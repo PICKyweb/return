@@ -1,19 +1,12 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base target="_top">
-  </head>
-  <body>
-    <iframe id="appFrame" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-
-    <script>
-      // 1. ใส่ลิงก์ Web App หน้า "คืน" ล่าสุดที่นี่เพียงจุดเดียว
-      const GAS_RETURN_URL = "https://script.google.com/macros/s/AKfycbxoHNsnASXrnePgZj98XwiOM5if6d4LIcDm5tu5OpxOHFflIQXqz0V6HMyWtNqxSPGF/exec";
-
-      // 2. ดึงค่าพารามิเตอร์ทั้งหมดจาก URL (เช่น ?row=5) ส่งต่อให้ iframe
-      const queryParams = window.location.search;
-      document.getElementById("appFrame").src = GAS_RETURN_URL + queryParams;
-    </script>
-  </body>
+   <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <base target="_top">
+   </head>
+   <body>
+      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbxoHNsnASXrnePgZj98XwiOM5if6d4LIcDm5tu5OpxOHFflIQXqz0V6HMyWtNqxSPGF/exec"></iframe>
+   </body>
 </html>
+
